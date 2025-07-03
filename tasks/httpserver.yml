@@ -70,7 +70,7 @@
       notify: restart jmx_exporter_httpserver
 
     - name: install service
-      include: service-{{ prometheus_exporter_service_mgr }}.yml
+      include_tasks: service-{{ prometheus_exporter_service_mgr }}.yml
 
     - name: Service Enabled
       become: true
